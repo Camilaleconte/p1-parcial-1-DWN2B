@@ -1,0 +1,290 @@
+/**
+ * Versión 1.0.0
+ */
+@charset "utf-8";
+
+/**
+ * Fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/**
+ * Mobile
+ */
+
+/** General */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/** Body */
+body {
+    background-color: #42610c;
+    color: whitesmoke;
+}
+
+/** Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+/** Encabezados */
+h1 {
+    font-family: 'Montserrat';
+    font-size: 3.2em;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    color: #010100;
+    font-size: 3.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-size: 2.5em;
+    color: #010100;
+    line-height: 1.5;
+}
+
+p  {
+    font-size: 1.6em;
+}
+
+
+#info {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/** Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4em 2em;
+    background-color: #FFF;
+}
+
+main p {
+    line-height: 1.5;
+    text-align: left;
+    color: #010100;
+    
+}
+
+main p strong {
+    font-weight: 700;
+    
+}
+
+main p em {
+    font-style: italic;
+}
+
+main ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    
+}
+
+main ul li {
+    margin-left: 2em;
+    font-size: 2.4em;
+    line-height: 1.5;
+    text-align: left;
+    color: #010100;
+}
+
+main ul li strong,
+main ul li em {
+    font-size: 1em;
+}
+
+main ul li strong {
+    font-weight: 700;
+}
+
+main ul li em {
+    font-style: italic;
+}
+
+main button {
+    margin: .5em 0;
+    border: none;
+    border-radius: .5em;
+    padding: .25em .5em;
+    background: #010100;
+    cursor: pointer;
+    font-size: 1.9em;
+    line-height: 1.5;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+}
+
+main div.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+    width: 100%;
+    padding: 1em;
+    background: #42610c;
+}
+
+main div.galeria > img {
+    max-width: 90%;
+    margin: 1em 5%;
+}
+
+main div.galeria > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5em;
+    height: 5em;
+}
+
+main div.galeria div {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+    padding: 1em;
+}
+
+main div.galeria div img {
+    width: 100%;
+}
+
+main div.galeria div h3 {
+    padding: .5em;
+    font-size: 3.2em;
+    text-align: center;
+    color: #42610c;
+}
+
+main div.galeria div p {
+    padding: 1em;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+main hr {
+    margin: 1em 0%;
+    width: 100%;
+    height: .1em;
+}
+
+.modificacionColor{
+     color: red;
+}
+
+.sinModificacionColor {
+    color: #010100;
+}
+
+/** Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em;
+    
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+footer ul li {
+    font-family: 'Montserrat';
+    font-size: 1.4em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+footer ul li a {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer ul li a:hover {
+    color: #010100;
+}
+
+/** Overs */
+main button:hover {
+    opacity: .8;
+}
+
+/**
+ * Web
+ */
+@media screen and (min-width: 960px) {
+
+    /** Main */
+    main div.galeria {
+        flex-direction: row;
+    }
+
+    main div.galeria > img {
+        max-width: 24%;
+        margin: 1em .5%;
+    }
+
+    main div.galeria div {
+        align-self: flex-start;
+        width: 30%;
+    }
+
+    /** Footer */
+    footer ul {
+        flex-direction: row;
+    }
+
+}

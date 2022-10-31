@@ -1,1 +1,2 @@
-# p1-parcial-1-DWN2B
+Bocutti, Santiago 
+Leconte, Camila
